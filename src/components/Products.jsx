@@ -1,12 +1,24 @@
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
+
 export const Products = () => {
-    return <div className="py-20">
+    const ref = useRef(null);  
+    const isInView = useInView(ref, { triggerOnce: true });
+
+    return <div className="py-20" id="products">
         <div className="text-6xl text-center font-semibold font-poppins">
             Our Products
         </div>
         <div className="flex flex-col gap-20 justify-center items-center pt-12">
             <div className="flex flex-wrap items-center justify-between">
                 <div className="flex-1 ">
-                    <div className=" max-w-lg pl-5 ">
+                    <motion.div
+                        className=" max-w-lg pl-5"
+                        ref={ref}
+                        initial={{ x: 600 }}  
+                        animate={isInView ? { x: 0 } : {}}   
+                        transition={{ duration: 1, ease: "easeInOut" }}
+                    >
                         <div className="text-3xl text-neutral-700 font-semibold font-poppins mb-4">
                             Astroway | Consultation App Solution
                         </div>
@@ -19,25 +31,30 @@ export const Products = () => {
                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m9 5 7 7-7 7" />
                             </svg>
                         </button>
-                    </div>
+                    </motion.div >
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 z-30">
                     <div className="flex flex-col items-center text-center">
-                        <img src="/Astroway-envato-aug.jpg" alt="Feature" className="rounded-md" />
-
+                        <img src="/Astroway-envato-aug.jpg" alt="Feature" className=" rounded-md" />
                     </div>
                 </div>
             </div>
 
             <div className="flex flex-wrap items-center gap-10">
-                <div className="flex-1">
+                <div className="flex-1 z-30">
                     <div className="flex flex-col items-center text-center">
                         <img src="/chitchat-self.jpg" alt="Feature" className="rounded-md" />
                     </div>
                 </div>
                 <div className="flex-1 text-left">
-                    <div className="text-gray-700 max-w-lg pl-5 ">
-                    <div className="text-3xl text-neutral-700 font-semibold font-poppins mb-4">
+                    <motion.div 
+                    className="text-gray-700 max-w-lg pl-5 "
+                    ref={ref}
+                    initial={{ x: -600 }}  
+                    animate={isInView ? { x: 0 } : {}}   
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                    >
+                        <div className="text-3xl text-neutral-700 font-semibold font-poppins mb-4">
                             ChitChat App | Multi-Purpose Consultation
                         </div>
                         <p className="text-neutral-500 font-roboto">
@@ -49,7 +66,7 @@ export const Products = () => {
                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m9 5 7 7-7 7" />
                             </svg>
                         </button>
-                    </div>
+                    </motion.div>
 
                 </div>
             </div>

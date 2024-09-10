@@ -8,16 +8,14 @@ export const Support = () => {
   };
 
   return (
-    <div className="fixed bottom-12 right-0 m-4">
+    <div className="fixed bottom-16 right-2">
       <button
         onClick={toggleMenu}
         className="bg-blue-500 flex text-white py-3 px-4 text-lg rounded-full shadow-lg items-center hover:px-7 transform duration-300"
       >
         <svg className="w-6 h-6 text-gray-800 dark:text-white mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
           <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 17h6l3 3v-3h2V9h-2M4 4h11v8H9l-3 3v-3H4V4Z" />
-        </svg>
-
-        Contact Us
+        </svg>Chat with us
       </button>
       {isOpen && (
         <div className={`absolute bottom-12 right-0 mb-3 bg-blue-500 text-white shadow-lg rounded-md w-64 items-center text-center transform duration-500 ease-in-out ${isOpen ? 'scale-100 opacity-100' : 'scale-75 opacity-0'}`}>

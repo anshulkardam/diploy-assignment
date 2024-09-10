@@ -8,6 +8,7 @@ import { Products } from "./components/Products"
 import { Showcase } from "./components/Showcase"
 import { Reviews } from "./components/Reviews"
 import { Support } from "./components/Support"
+import BackToTopButton from "./components/BacktoTop"
 
 function App() {
 
@@ -17,10 +18,13 @@ function App() {
     <LandingCard />
     <Stats />
     <WhyUs />
-    <Products/>
+    <Products />
     <Showcase />
     <Reviews />
-    <Support />
+    <div className="flex justify-between items-center p-4">
+      <Support />
+      <BackToTopButton />
+    </div>
     <FooterDetails />
   </div>
 

@@ -2,6 +2,12 @@ import { useEffect, useState } from "react";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const scrollToProductInfo = () => {
+    const element = document.getElementById('products');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +30,7 @@ export const Navbar = () => {
       </div>
       <div className={`items-center space-x-5 text-sm flex font-semibold font-montserrat cursor-pointer ${isScrolled ? " space-x-2" : ""}`}>
         <p className="underline underline-offset-4">Home</p>
-        <p className={`hover:underline hover:underline-offset-4 ${isScrolled ? "block" : "hidden"}`}>Products</p>
+        <p onClick={scrollToProductInfo} className={`hover:underline hover:underline-offset-4 ${isScrolled ? "block" : "hidden"}`}>Products</p>
         <p className={`hover:underline hover:underline-offset-4 ${isScrolled ? "hidden" : "block"}`}>About Us</p>
         <p className={`hover:underline hover:underline-offset-4 ${isScrolled ? "hidden" : "block"}`}>Privacy Policy</p>
         <button type="button" className="items-center flex px-3 py-2 text-sm font-medium text-center text-white bg-blue-600 rounded-md hover:bg-blue-800">

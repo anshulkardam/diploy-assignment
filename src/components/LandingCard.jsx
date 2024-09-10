@@ -2,6 +2,12 @@ import { Cover } from "./Cover"
 import Typewriter from 'typewriter-effect';
 
 export const LandingCard = () => {
+    const scrollToProductInfo = () => {
+        const element = document.getElementById('products');
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     return <div>
         <div className="grid grid-cols-6">
             <div className="col-span-3">
@@ -26,7 +32,7 @@ export const LandingCard = () => {
                             </svg>
                             Get Started
                         </button>
-                        <button type="button" className="group flex items-center text-gray-900 text-base hover:text-white border border-gray-800 hover:bg-gray-900 font-medium rounded-lg px-4 py-2 hover:px-7 transform duration-300 text-center me-2 ">
+                        <button onClick={scrollToProductInfo} type="button" className="group flex items-center text-gray-900 text-base hover:text-white border border-gray-800 hover:bg-gray-900 font-medium rounded-lg px-4 py-2 hover:px-7 transform duration-300 text-center me-2 ">
                             Our Products
                             <svg className="w-6 h-6 text-gray-900 group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m9 5 7 7-7 7" />
@@ -41,9 +47,6 @@ export const LandingCard = () => {
                     <img src="phone.gif" alt="Overlay Image" className="absolute -bottom-4 -left-32 w-4/5" />
                 </div>
             </div>
-
-
-
         </div>
         <div className="flex gap-8 justify-center">
             <img

@@ -1,11 +1,12 @@
+
 export const WhyUs = () => {
+
     return <div className="pt-6">
         <div className="text-6xl text-center font-medium font-sans mb-6">
             Why Choose <span className="font-pacifico">Diploy</span>
         </div>
         <div className="pt-10">
             <div className="flex flex-col gap-10 justify-center items-center">
-                
                 <div className="flex flex-wrap items-center gap-10">
                     <div className="flex-1 p-6 max-w-sm bg-white rounded-lg shadow-lg border border-gray-200 mr-4">
                         <div className="flex flex-col items-center text-center">
@@ -27,7 +28,6 @@ export const WhyUs = () => {
                                 <p className="font-roboto mt-2 text-neutral-500"> Prioritize user satisfaction with intuitive interfaces and engaging experiences tailored to your audience's needs.</p>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
@@ -78,6 +78,14 @@ export const WhyUs = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="flex justify-center items-center mt-10">
+            <button type="button" className="items-center mt-4 flex px-10 py-3 text-md font-medium text-center text-white bg-black rounded-md hover:px-12 transform duration-300">
+                Book a meeting 
+                <svg className="w-4 h-4 text-white mt-0.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m9 5 7 7-7 7" />
+                </svg>
+            </button>
             </div>
         </div>
 
