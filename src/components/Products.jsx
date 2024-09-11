@@ -6,14 +6,14 @@ export const Products = () => {
     const isInView = useInView(ref, { triggerOnce: true });
 
     return <div className="py-20" id="products">
-        <div className="text-3xl md:text-6xl text-center font-semibold font-poppins">
+        <div className="text-3xl md:text-5xl lg:6xl text-center font-semibold font-poppins">
             Our Products
         </div>
         <div className="flex flex-col gap-20 justify-center items-center pt-12">
             <div className="flex flex-wrap items-center justify-between">
                 <div className="flex-1 ">
                     <motion.div
-                        className="hidden md:block md:max-w-lg md:pl-5"
+                        className="hidden lg:block lg:max-w-lg lg:pl-20 xl:pl-5"
                         ref={ref}
                         initial={{ x: 600 }}
                         animate={isInView ? { x: 0 } : {}}
@@ -33,15 +33,15 @@ export const Products = () => {
                         </button>
                     </motion.div >
                 </div>
-                <div className="md:flex-1 md:z-30">
+                <div className="lg:flex-1 lg:z-30">
                     <div className="flex flex-col items-center text-center">
-                        <img src="/Astroway-envato-aug.jpg" alt="Feature" className=" rounded-md" />
+                        <img src="/Astroway-envato-aug.jpg" alt="Feature" className="shadow-xl rounded-md" />
                     </div>
-                    <div className='block md:hidden text-center mt-4'>
+                    <div className='block lg:hidden text-center mt-4'>
                         <div className="text-3xl text-neutral-700 font-semibold font-poppins mb-4">
                             Astroway | Consultation App Solution
                         </div>
-                        <p className="text-neutral-500 font-roboto">
+                        <p className="text-neutral-500 md:text-lg font-medium font-roboto">
                             Are you looking to start your own Online Astrology Consutation business but don’t know where to begin?
                         </p>
                         <div className='flex justify-center'>
@@ -57,15 +57,15 @@ export const Products = () => {
             </div>
 
             <div className="flex flex-wrap items-center gap-10">
-                <div className="md:flex-1 md:z-30">
+                <div className="lg:flex-1 lg:z-30">
                     <div className="flex flex-col items-center text-center">
-                        <img src="/chitchat-self.jpg" alt="Feature" className="rounded-md" />
+                        <img src="/chitchat-self.jpg" alt="Feature" className="rounded-md shadow-xl" />
                     </div>
-                    <div className='block md:hidden text-center mt-4'>
+                    <div className='block lg:hidden text-center mt-4'>
                         <div className="text-3xl text-neutral-700 font-semibold font-poppins mb-4">
                             ChitChat App | Multi-Purpose Consultation
                         </div>
-                        <p className="text-neutral-500 font-roboto">
+                        <p className="text-neutral-500 md:text-lg font-medium font-roboto">
                             Start consultation with Doctors, lawyers, Motivational Gurus or astrology.
                         </p>
                         <div className='flex justify-center'>
@@ -80,7 +80,7 @@ export const Products = () => {
                 </div>
                 <div className="flex-1 text-left">
                     <motion.div
-                        className="hidden md:block md:text-gray-700 md:max-w-lg md:pl-5 "
+                        className="hidden lg:block lg:text-gray-700 lg:max-w-lg lg:pl-20 xl:pl-5 "
                         ref={ref}
                         initial={{ x: -600 }}
                         animate={isInView ? { x: 0 } : {}}

@@ -15,12 +15,17 @@ const Dropdown = ({ title, options }) => {
         }, 200);
 
     };
-
+    const handleclick = () => {
+        setTimeout(() => {
+            setIsOpen(true);
+        }, 200);
+    };
     return (
         <div className="relative inline-block text-left mx-2">
 
             <button
-                className="text-black py-2 px-4 flex rounded focus:outline-none hover:bg-gray-200 group"
+                className="text-black py-2 sm:px-1 md:px-2 lg:px-3 xl:px-4 flex rounded focus:outline-none hover:bg-gray-200 group"
+                onClick={handleclick}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
@@ -43,7 +48,7 @@ const Dropdown = ({ title, options }) => {
                         setOpen(false)
                     }}  
                 >
-                    <div className="absolute left-1/2 transform -translate-x-1/2 -top-2 w-0 h-0 border-x-8 border-x-transparent border-b-8 border-b-white" />
+                    <div className="absolute left-1/4 transform -translate-x-1/2 -top-2 w-0 h-0 border-x-8 border-x-transparent border-b-8 border-b-white" />
                     <div className="">
                         {options.map((option, index) => (
                             <a
@@ -63,7 +68,7 @@ const Dropdown = ({ title, options }) => {
 
 export const Menubar = () => {
     return (
-        <div className="hidden md:flex md:justify-center md:space-x-6 md:p-1 md:border md:font-medium md:font-poppins md:text-sm">
+        <div className="hidden sm:flex sm:justify-center sm:space-x-1 md:space-x-6 sm:p-1 sm:border sm:font-medium sm:font-poppins sm:text-sm">
             <Dropdown title="Products" options={['BestSellers', 'Consultation App', 'Chat App', 'E-commerce', 'Portfolio', 'Blogging', 'Ed-tech', 'Health & Wellness']} />
             <Dropdown title="Tools and apps" options={['Dashboard', 'Landing Page', 'Analytics', 'E-commerce Integration' ,'SEO Tools' , 'Responsive Design' ,'Social Media Integration','Custom Forms','User Management']} />
             <Dropdown title="Pricing" options={['Payments and Pricing', 'Subscription Plans', 'Diploy+','Diploy+ Gold','Platinum', 'Offers']} />

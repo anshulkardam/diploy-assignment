@@ -20,7 +20,7 @@ export default function TemporaryDrawer() {
   };
 
   const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
+    <Box sx={{ width: 225 }} role="presentation" onClick={toggleDrawer(false)}>
       <List>
         {['Home', 'Products', 'Tools', 'Pricing', 'Resources','Gallery', 'Diploy Connect'].map((text, index) => (
           <ListItem key={text} disablePadding>
@@ -52,7 +52,7 @@ export default function TemporaryDrawer() {
   return (
     <div>
       <Button onClick={toggleDrawer(true)}><MenuRoundedIcon className='text-black' /></Button>
-      <Drawer open={open} onClose={toggleDrawer(false)}>
+      <Drawer open={open} anchor='right' onClose={toggleDrawer(false)}>
         {DrawerList}
       </Drawer>
     </div>
