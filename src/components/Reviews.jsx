@@ -1,9 +1,31 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Rating, RatingStar } from "flowbite-react";
 
 export const Reviews = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const reviewsPerPage = 3;
+  const [reviewsPerPage, setReviewsPerPage] = useState(3);
+    // Function to update reviewsPerPage based on screen width
+  const handleResize = () => {
+    if (window.innerWidth <= 768) {
+      setReviewsPerPage(1); // Mobile size
+    } else {
+      setReviewsPerPage(3); // Laptop/desktop size
+    }
+  };
+
+  useEffect(() => {
+    // Set the initial value on component mount
+    handleResize();
+
+    // Add event listener to track window resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % reviewsData.length);

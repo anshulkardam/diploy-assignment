@@ -21,7 +21,7 @@ const BackToTopButton = () => {
     <button
       onClick={scrollToTop}
       type="button"
-      className={`fixed bottom-2 right-2 bg-gray-900 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition duration-300 ${isScrolled ? "animate-slideUp" : "hidden"}`}
+      className={`fixed bottom-2 z-40 right-2 bg-gray-900 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition duration-300 ${isScrolled ? "animate-slideUp" : "hidden"}`}
       aria-label="Back to top"
     >
       <svg

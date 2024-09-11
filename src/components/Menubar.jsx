@@ -18,7 +18,7 @@ const Dropdown = ({ title, options }) => {
 
     return (
         <div className="relative inline-block text-left mx-2">
-          
+
             <button
                 className="text-black py-2 px-4 flex rounded focus:outline-none hover:bg-gray-200 group"
                 onMouseEnter={handleMouseEnter}
@@ -63,7 +63,7 @@ const Dropdown = ({ title, options }) => {
 
 export const Menubar = () => {
     return (
-        <div className="flex justify-center space-x-6 p-1 border font-medium font-poppins text-sm">
+        <div className="hidden md:flex md:justify-center md:space-x-6 md:p-1 md:border md:font-medium md:font-poppins md:text-sm">
             <Dropdown title="Products" options={['BestSellers', 'Consultation App', 'Chat App', 'E-commerce', 'Portfolio', 'Blogging', 'Ed-tech', 'Health & Wellness']} />
             <Dropdown title="Tools and apps" options={['Dashboard', 'Landing Page', 'Analytics', 'E-commerce Integration' ,'SEO Tools' , 'Responsive Design' ,'Social Media Integration','Custom Forms','User Management']} />
             <Dropdown title="Pricing" options={['Payments and Pricing', 'Subscription Plans', 'Diploy+','Diploy+ Gold','Platinum', 'Offers']} />

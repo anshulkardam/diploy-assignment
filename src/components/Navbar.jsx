@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import TemporaryDrawer from "./Drawer";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,13 +23,13 @@ export const Navbar = () => {
   }, []);
   return <div className={`p-2.5 bg-slate-100 text-black sticky z-50 top-0 transition-all duration-300 ${isScrolled ? "rounded-full w-3/5 mx-auto shadow-lg" : "w-full"
     }`}>
-    <div className={`flex justify-between mx-52 ${isScrolled ? "mx-8" : ""}`}>
+    <div className={`flex justify-between ${isScrolled ? "mx-2 md:mx-10" : "mx-4 md:mx-28"}`}>
       <div>
         <p className="text-3xl font-medium  font-pacifico">
           Diploy
         </p>
       </div>
-      <div className={`items-center space-x-5 text-sm flex font-semibold font-montserrat cursor-pointer ${isScrolled ? " space-x-2" : ""}`}>
+      <div className={`hidden md:items-center md:space-x-5 md:text-sm md:flex md:font-semibold md:font-montserrat cursor-pointer ${isScrolled ? " md:space-x-2" : ""}`}>
         <p className="underline underline-offset-4">Home</p>
         <p onClick={scrollToProductInfo} className={`hover:underline hover:underline-offset-4 ${isScrolled ? "block" : "hidden"}`}>Products</p>
         <p className={`hover:underline hover:underline-offset-4 ${isScrolled ? "hidden" : "block"}`}>About Us</p>
@@ -39,6 +40,9 @@ export const Navbar = () => {
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m9 5 7 7-7 7" />
           </svg>
         </button>
+      </div>
+      <div className="md:hidden ">
+      <TemporaryDrawer />
       </div>
     </div>
   </div>
