@@ -16,16 +16,16 @@ function App() {
     <Navbar />
     <Menubar />
     <LandingCard />
-     <Stats />
+    <Stats />
     <WhyUs />
-       <Products /> 
+    <Products />
     <Showcase />
-   <Reviews />
-     <div className="flex justify-between items-center p-4">
+    <Reviews />
+    <div className="flex justify-between items-center p-4">
       <Support />
       <BackToTopButton />
     </div>
-    <FooterDetails /> 
+    <FooterDetails />
   </div>
 
 }

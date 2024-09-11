@@ -6,7 +6,7 @@ export const Products = () => {
     const isInView = useInView(ref, { triggerOnce: true });
 
     return <div className="py-20" id="products">
-        <div className="text-6xl text-center font-semibold font-poppins">
+        <div className="text-3xl md:text-6xl text-center font-semibold font-poppins">
             Our Products
         </div>
         <div className="flex flex-col gap-20 justify-center items-center pt-12">

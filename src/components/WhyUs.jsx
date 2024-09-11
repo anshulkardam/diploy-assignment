@@ -4,7 +4,7 @@ export const WhyUs = () => {
         <div className="text-4xl md:text-6xl text-center font-medium font-sans mb-6">
             Why Choose <span className="font-pacifico">Diploy</span>
         </div>
-        <div className="pt-10">
+        <div className="pt-3">
             <div className="flex flex-col gap-10 justify-center items-center">
                 {/* First Row */}
                 <div className="flex flex-wrap items-center gap-10 justify-center">
