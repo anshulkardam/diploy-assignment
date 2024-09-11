@@ -13,9 +13,9 @@ export const Products = () => {
             <div className="flex flex-wrap items-center justify-between">
                 <div className="flex-1 ">
                     <motion.div
-                        className="hidden lg:block lg:max-w-lg lg:pl-20 xl:pl-5"
+                        className="hidden lg:block lg:max-w-lg lg:pl-20 xl:pl-7"
                         ref={ref}
-                        initial={{ x: 600 }}
+                        initial={{ x: 520 }}
                         animate={isInView ? { x: 0 } : {}}
                         transition={{ duration: 1, ease: "easeInOut" }}
                     >
