@@ -41,7 +41,7 @@ const Dropdown = ({ title, options }) => {
           
             {(isOpen || open) && (
                 <div
-                    className="absolute z-40 p-6 bg-white w-auto rounded-md shadow-lg ring-1 ring-white ring-opacity-5 whitespace-nowrap "
+                    className="absolute mt-1 z-40 p-5 bg-white w-auto shadow-lg ring-1 ring-white ring-opacity-5 whitespace-nowrap "
                     onMouseEnter={() => { setOpen(true) }}  
                     onMouseLeave={() => {
                         setIsOpen(false)
@@ -68,7 +68,7 @@ const Dropdown = ({ title, options }) => {
 
 export const Menubar = () => {
     return (
-        <div className="hidden sm:flex sm:justify-center sm:space-x-1 md:space-x-6 sm:p-1 sm:border sm:font-medium sm:font-poppins sm:text-sm">
+        <div className="hidden sticky z-50 top-14 bg-white sm:block sm:px-2 md:px-3 lg:pl-32 sm:space-x-0 md:space-x-3 sm:p-1 sm:border sm:font-medium sm:font-poppins sm:text-sm">
             <Dropdown title="Products" options={['BestSellers', 'Consultation App', 'Chat App', 'E-commerce', 'Portfolio', 'Blogging', 'Ed-tech', 'Health & Wellness']} />
             <Dropdown title="Tools and apps" options={['Dashboard', 'Landing Page', 'Analytics', 'E-commerce Integration' ,'SEO Tools' , 'Responsive Design' ,'Social Media Integration','Custom Forms','User Management']} />
             <Dropdown title="Pricing" options={['Payments and Pricing', 'Subscription Plans', 'Diploy+','Diploy+ Gold','Platinum', 'Offers']} />

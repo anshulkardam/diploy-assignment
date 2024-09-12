@@ -39,6 +39,7 @@ export default {
         pacifico: ['Pacifico', 'cursive'],
         Figtree: ['Figtree', 'cursive'],
         vujahday: ['Vujahday Script', 'cursive'],
+        'dm-sans': ['"DM Sans"', 'sans-serif'],
         'bebas-neue': ['Bebas Neue', 'sans-serif'],
         'playwrite-nz': ['Playwrite NZ', 'sans-serif'],
         'source-code-pro': ['Source Code Pro', 'monospace'],

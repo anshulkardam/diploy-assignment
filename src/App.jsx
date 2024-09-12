@@ -9,15 +9,19 @@ import { Showcase } from "./components/Showcase"
 import { Reviews } from "./components/Reviews"
 import { Support } from "./components/Support"
 import BackToTopButton from "./components/BacktoTop"
+import { OfferBar } from "./components/Offerbar"
+import { Accel } from "./components/Accel"
 
 function App() {
 
-  return <div className="bg-slate-100 min-h-screen">
+  return <div className="">
+    <OfferBar/>
     <Navbar />
     <Menubar />
     <LandingCard />
     <Stats />
     <WhyUs />
+    <Accel />
     <Products />
     <Showcase />
     <Reviews />

@@ -6,7 +6,7 @@ export const FooterDetails = () => {
               <div className="mb-6 md:mb-0">
                   <a href="https://diploy.in/" className="flex items-center">
                       <img src="/logo.png" className="h-8 me-3" alt="FlowBite Logo" />
-                      <span className="self-center text-3xl font-medium text-slate-100 whitespace-nowrap font-pacifico">Diploy</span>
+                      <span className="self-center text-3xl font-medium text-slate-100 whitespace-nowrap font-dm-sans">Diploy</span>
                       
                   </a>
                   

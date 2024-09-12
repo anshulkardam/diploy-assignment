@@ -1,8 +1,8 @@
 
 export const WhyUs = () => {
-    return <div className="pt-6">
-        <div className="text-4xl md:text-6xl text-center font-medium font-sans mb-6">
-            Why Choose <span className="font-pacifico">Diploy</span>
+    return <div className="py-10">
+        <div className="text-4xl md:text-6xl text-center font-bold font-dm-sans mb-6">
+            Why Choose <span className="font-dm-sans">Diploy</span>
         </div>
         <div className="pt-3">
             <div className="flex flex-col gap-10 justify-center items-center">
