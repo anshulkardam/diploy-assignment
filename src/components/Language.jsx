@@ -5,7 +5,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-export const LangSelect = () => {
+export const Language = () => {
   const [language, setLanguage] = React.useState('English');
 
   const handleChange = (event) => {

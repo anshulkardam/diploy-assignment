@@ -2,8 +2,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
-import { LangSelect } from './langSelect';
-
+import { Language } from './Language';
 
 export const FooterDetails = () => {
     return (
@@ -134,7 +133,7 @@ export const FooterDetails = () => {
                         <p className="text-xs hover:underline">Sitemap</p>
                     </div>
                     <div className="flex order-1 md:order-2 items-center space-x-4">
-                        <LangSelect />
+                        <Language />
                     </div>
                 </div>
             </div>
