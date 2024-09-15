@@ -19,7 +19,7 @@ const HtmlTooltip = styled(({ className, ...props }) => (
 export const OfferBar = () => {
 
     return (<div>
-        <div className="bg-black text-white flex justify-center text-center py-2 relative">
+        <div className="bg-black cursor-pointer text-white flex justify-center text-center py-2 relative">
             <span className=" underline flex items-center font-poppins">
                 Get Started Today! Use Code DPLY to Save 10% on Your First Website Package!
                 <HtmlTooltip

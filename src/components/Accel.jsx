@@ -7,7 +7,7 @@ export const Accel = () => {
       <div className="w-full lg:w-1/2 order-2 md:order-1 space-y-6 mb-8 lg:mb-0 flex flex-col justify-center lg:justify-start ">
         <div className="text-center lg:text-left">
           <p className="text-center lg:text-left text-lg font-medium font-dm-sans">For print on demand sellers</p>
-          <h1 className=" text-center lg:text-left text-4xl md:text-6xl lg:text-6xl font-semibold text-gray-900">
+          <h1 className=" text-center lg:text-left text-2xl sm:text-3xl md:text-6xl lg:text-6xl font-semibold text-gray-900">
             Accelerate business growth with innovative design tools and apps
           </h1>
           <p className="text-center lg:text-left text-base md:text-2xl mt-10 font-dm-sans">

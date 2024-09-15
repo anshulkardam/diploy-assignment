@@ -115,7 +115,7 @@ export const FooterDetails = () => {
                 </div>
                 <div className='md:hidden mt-4 block '>
                     <p className='text-lg font-montserrat'>Find Diploy on:</p>
-                    <div className="flex gap-10 justify-center p-5 items-center cursor-pointer">
+                    <div className="flex gap-3 sm:gap-8 md:gap-8 lg:gap-10 justify-center p-5 items-center cursor-pointer">
                         <InstagramIcon fontSize='large' />
                         <FacebookIcon fontSize='large' />
                         <img src="/tiktok.svg" className="w-8 h-8" />
