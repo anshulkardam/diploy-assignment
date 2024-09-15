@@ -12,6 +12,9 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        customamber: '#faf6ef',
+        },
       animation: {
         slideUp: 'slideUp 0.5s ease-out',
         spotlight: "spotlight 2s ease .75s 1 forwards",

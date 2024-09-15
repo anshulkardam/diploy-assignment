@@ -4,25 +4,27 @@ import { Menubar } from "./components/Menubar"
 import { Navbar } from "./components/Navbar"
 import { Stats } from "./components/Stats"
 import { WhyUs } from "./components/WhyUs"
-import { Products } from "./components/Products"
+import { Connect } from "./components/Connect"
 import { Showcase } from "./components/Showcase"
 import { Reviews } from "./components/Reviews"
 import { Support } from "./components/Support"
 import BackToTopButton from "./components/BacktoTop"
 import { OfferBar } from "./components/Offerbar"
 import { Accel } from "./components/Accel"
+import { Event } from "./components/Event"
 
 function App() {
 
   return <div className="">
-    <OfferBar/>
+    <OfferBar />
     <Navbar />
     <Menubar />
     <LandingCard />
     <Stats />
     <WhyUs />
     <Accel />
-    <Products />
+    <Connect />
+    <Event />
     <Showcase />
     <Reviews />
     <div className="flex justify-between items-center p-4">

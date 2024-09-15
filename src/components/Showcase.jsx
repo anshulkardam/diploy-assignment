@@ -26,7 +26,7 @@ export const Showcase = () => {
         </Highlight>
       </motion.h1>
           <p className="text-lg font-poppins text-neutral-500 font-medium mt-4">
-            Be ready to use the next generation of WordPress themes. Experience Essentials by Pixfort.
+            Be ready to use the next generation of Printing. Experience Essentials by Diploy.
           </p>
         </div>  
     </HeroHighlight>

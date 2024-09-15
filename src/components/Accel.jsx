@@ -1,37 +1,36 @@
-export const Accel = () => {
-    return (
-        <div className="py-10 flex flex-col justify-center items-center  px-4 md:px-10 lg:px-20 bg-orange-50">
-            <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-20 max-w-7xl">
-                {/* Left Side: Text */}
-                <div className="col-span-1">
-                    <div className="w-full text-center md:text-left">
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
-                            Accelerate business growth with innovative design tools and apps
-                        </h1>
-                        <p className="text-lg md:text-xl text-gray-600 mb-4">
-                            See how our cutting-edge solutions can help you reach new customers and maximize your profits.
-                        </p>
-                        <div className="flex justify-center md:justify-start">
-                        <button
-                            type="button"
-                            className="items-center flex justify-center px-5 py-2 text-md font-semibold text-white rounded-full bg-black hover:text-gray-400" >
-                            Get Started
-                        </button>
-                        </div>
-                    </div>
-                </div>
+import React from "react";
 
-                {/* Right Side: Image */}
-                <div className="col-span-1 mt-6 md:mt-0">
-                    <div className="w-full">
-                        <img
-                            src="/intro-image.png"
-                            alt="intro-image"
-                            className="rounded-lg shadow-lg"
-                        />
-                    </div>
-                </div>
-            </div>
+export const Accel = () => {
+  return (
+    <div className="flex flex-col md:flex-row justify-between items-center bg-customamber  px-5 lg:px-10 xl:px-40 2xl:px-80 gap-2">
+      {/* Text Section */}
+      <div className="w-full lg:w-1/2 order-2 md:order-1 space-y-6 mb-8 lg:mb-0 flex flex-col justify-center lg:justify-start ">
+        <div className="text-center lg:text-left">
+          <p className="text-center lg:text-left text-lg font-medium font-dm-sans">For print on demand sellers</p>
+          <h1 className=" text-center lg:text-left text-4xl md:text-6xl lg:text-6xl font-semibold text-gray-900">
+            Accelerate business growth with innovative design tools and apps
+          </h1>
+          <p className="text-center lg:text-left text-base md:text-2xl mt-10 font-dm-sans">
+            See how our cutting-edge solutions can help you reach new customers
+            and maximize your profits.
+          </p>
+          <button 
+            className="bg-black text-white px-3 py-2 mt-5 mb-2 rounded-full text-xs md:text-sm font-medium hover:bg-gray-800"
+            aria-label="Get started with our design tools"
+          >
+            Get started
+          </button>
         </div>
-    );
+      </div>
+
+      {/* Image Section */}
+      <div className="w-full lg:w-1/2 order-1 md:order-2 flex justify-center lg:justify-end">
+        <img
+          src="accel.gif" 
+          alt="Business growth products"
+          className="sm:w-[50vh]  xl:w-[90vh] 2xl:w-[70vh] h-auto "
+        />
+      </div>
+    </div>
+  );
 };

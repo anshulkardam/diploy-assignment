@@ -1,101 +1,69 @@
 
 export const WhyUs = () => {
-    return <div className="py-10">
-        <div className="text-4xl md:text-6xl text-center font-bold font-dm-sans mb-6">
+    return <div className="py-12">
+        <div className="text-4xl md:text-6xl text-center text-neutral-800 font-bold font-dm-sans mb-6">
             Why Choose <span className="font-dm-sans">Diploy</span>
         </div>
-        <div className="pt-3">
+        <div className="pt-5">
             <div className="flex flex-col gap-10 justify-center items-center">
                 {/* First Row */}
                 <div className="flex flex-wrap items-center gap-10 justify-center">
-                    <div className="flex-1 p-6 max-w-sm bg-white rounded-lg shadow-lg border border-gray-200">
-                        <div className="flex flex-col items-center text-center">
-                            <img src="/designer.png" alt="Designer" className="w-36 h-36 mb-4" />
-                            <h2 className="text-xl font-semibold mb-2">Responsive Design</h2>
-                            <p className="text-gray-700">
-                                UI/UX is crucial for success in the app industry, and we ensure it stays up-to-date with current trends.
-                            </p>
+                    <div className="sm:flex-1 max-w-xl   ">
+                        <div className="flex flex-col items-center text-center pt-2">
+                            <img src="/whyus1.webp" alt="Designer" className="" />
                         </div>
                     </div>
-                    <div className="hidden md:block md:flex-1 md:text-left md:max-w-lg">
+                    <div className="px-10 sm:px-0 sm:flex-1 sm:text-left sm:max-w-xl ">
                         <div className="text-gray-700 pl-5">
                             <div className="mb-5">
-                                <div className="font-semibold text-xl font-poppins">▻ Innovative Design:</div>
-                                <p className="font-roboto mt-2 text-neutral-500">
-                                    Transform your vision into reality with cutting-edge UI/UX that sets trends, not follows them.
+                                <div className="font-medium text-2xl font-dm-sans">▻ World's largest print-on-demand network</div>
+                                <p className="font-dm-sans mt-2 text-neutral-600 font-light">
+                                140+ print partners in 32 countries. Gelato is a truly global service.
                                 </p>
                             </div>
-                            <div>
-                                <div className="font-semibold text-xl font-poppins">▻ User-Centric Approach:</div>
-                                <p className="font-roboto mt-2 text-neutral-500">
-                                    Prioritize user satisfaction with intuitive interfaces and engaging experiences tailored to your audience's needs.
+                            <div className="mb-5">
+                                <div className="font-medium text-2xl font-dm-sans">▻ Sell globally, produce locally</div>
+                                <p className="font-roboto mt-2 text-neutral-600 font-light">
+                                Your products are produced close to your customers, wherever they are.
+                                </p>
+                            </div>
+                            <div className="mb-5">
+                                <div className="font-medium text-2xl font-dm-sans">▻ 100% free editing tools</div>
+                                <p className="font-roboto mt-2 text-neutral-600 font-light">
+                                Create your custom products using our suite of <span className="underline">free tools.</span>
+                                </p>
+                            </div>
+                            <div className="mb-5">
+                                <div className="font-medium text-2xl font-dm-sans">▻ 60+logistics partners</div>
+                                <p className="font-roboto mt-2 text-neutral-600 font-light">
+                                Our global network of logistics partners ensures your products are delivered fast.
+                                </p>
+                            </div>
+                            <div className="mb-5">
+                                <div className="font-medium text-2xl font-dm-sans">▻ High-quality products</div>
+                                <p className="font-roboto mt-2 text-neutral-600 font-light">
+                                We partner with the world's leading brands to ensure the best quality products.
+                                </p>
+                            </div>
+                            <div className="mb-5">
+                                <div className="font-medium text-2xl font-dm-sans">▻ Endless creativity with Shutterstock Images</div>
+                                <p className="font-roboto mt-2 text-neutral-600 font-light">
+                                Access millions of images and graphics to create unique products you can sell in your store.
+                                </p>
+                            </div>
+                            <div className="mb-5">
+                                <div className="font-medium text-2xl font-dm-sans">▻ 1-click integration to the leading ecommerce platforms</div>
+                                <p className="font-roboto mt-2 text-neutral-600 font-light">
+                                Connect your store to Gelato using <span className="underline">our integrations</span> with <span className="underline">Shopify, Etsy</span> and more.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                {/* Second Row */}
-                <div className="flex flex-wrap items-center gap-10 justify-center">
-                    <div className="hidden md:block md:flex-1 md:text-right md:max-w-lg">
-                        <div className="text-gray-700 pr-5 text-left">
-                            <div className="mb-5">
-                                <div className="font-semibold text-xl font-poppins">▻ Top-Tier Security:</div>
-                                <p className="font-roboto mt-2 text-neutral-500">
-                                    Protect your digital assets with our state-of-the-art security solutions, safeguarding against threats and ensuring peace of mind.
-                                </p>
-                            </div>
-                            <div>
-                                <div className="font-semibold text-xl font-poppins">▻ Performance Excellence:</div>
-                                <p className="font-roboto mt-2 text-neutral-500">
-                                    Maximize efficiency and speed with our optimized applications designed for high performance and reliability.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex-1 p-6 max-w-sm bg-white rounded-lg shadow-lg border border-gray-200">
-                        <div className="flex flex-col items-center text-center">
-                            <img src="/feature-2.png" alt="Feature" className="w-36 h-36 mb-4" />
-                            <h2 className="text-xl font-semibold mb-2">Secure Connection</h2>
-                            <p className="text-gray-700">
-                                Our solutions are developed with robust security measures to deter scammers.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Third Row */}
-                <div className="flex flex-wrap items-center gap-10 justify-center">
-                    <div className="flex-1 p-6 max-w-sm bg-white rounded-lg shadow-lg border border-gray-200">
-                        <div className="flex flex-col items-center text-center">
-                            <img src="/feature-3.png" alt="Feature" className="w-36 h-36 mb-4" />
-                            <h2 className="text-xl font-semibold mb-2">No Coding Required</h2>
-                            <p className="text-gray-700">
-                                Empower Your User’s Digital Experience with Our Cross-Platform App Excellence.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="hidden md:block md:flex-1 md:text-left md:max-w-lg">
-                        <div className="text-gray-700 pl-5">
-                            <div className="mb-5">
-                                <div className="font-semibold text-xl font-poppins">▻ Scalable Growth:</div>
-                                <p className="font-roboto mt-2 text-neutral-500">
-                                    Future-proof your business with scalable solutions that adapt to your needs, from startup to enterprise-level projects.
-                                </p>
-                            </div>
-                            <div>
-                                <div className="font-semibold text-xl font-poppins">▻ No-Code Solutions:</div>
-                                <p className="font-roboto mt-2 text-neutral-500">
-                                    Empower your team with intuitive tools that require no coding expertise, enabling rapid development and deployment of digital products.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
-
-            {/* Call to Action Button */}
-            <div className="flex justify-center items-center mt-10">
+            <div className="flex justify-center items-center">
                 <button
                     type="button"
                     className="flex items-center mt-4 px-10 py-3 text-md font-medium text-white bg-black rounded-md hover:px-12 transform duration-300"
